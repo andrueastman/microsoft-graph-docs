@@ -177,6 +177,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var calendarView = await graphClient.Me.CalendarView.CalendarView.Request().GetAsync();
+
+```
+
 ### Step 2: sample second request
 
 The second request specifies the `nextLink` URL returned from the previous response. Notice that it no longer has to specify
@@ -268,6 +276,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var calendarView = await graphClient.Me.CalendarView.CalendarView.Request().GetAsync();
+
+```
+
 
 ### Step 3: sample third request
 
@@ -336,6 +352,14 @@ Content-type: application/json
         }
     ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var calendarView = await graphClient.Me.CalendarView.CalendarView.Request().GetAsync();
+
 ```
 
 
@@ -420,6 +444,14 @@ Content-type: application/json
         }
     ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var calendarView = await graphClient.Me.CalendarView.CalendarView.Request().GetAsync();
+
 ```
 
 ## See also

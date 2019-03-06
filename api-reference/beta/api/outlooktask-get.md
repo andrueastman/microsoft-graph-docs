@@ -119,6 +119,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var tasks = await graphClient.Me.Outlook.Tasks.Tasks.Request().GetAsync();
+
+```
+
 ### Example 2: Get Outlook task with date-time properties in Pacific Standard Time
 
 #### Request
@@ -182,6 +190,14 @@ Content-type: application/json
   "status": "notStarted",
   "subject": "Shop for children's weekend"
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var tasks = await graphClient.Me.Outlook.Tasks.Tasks.Request().GetAsync();
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

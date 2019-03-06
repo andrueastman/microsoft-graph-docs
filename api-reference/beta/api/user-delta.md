@@ -149,6 +149,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var users = await graphClient.Users.Users.Request().GetAsync();
+
+```
+
 #### Request 2
 
 The next example shows the initial request selecting 3 properties for change tracking, with default response behavior:
@@ -187,6 +195,22 @@ Content-type: application/json
     }
   ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var users = await graphClient.Users.Users.Request().GetAsync();
+
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var users = await graphClient.Users.Users.Request().GetAsync();
+
 ```
 
 #### Request 3

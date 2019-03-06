@@ -137,6 +137,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var messages = await graphClient.Me.Messages.Messages.Request().GetAsync();
+
+```
+
 ##### Request 2
 The next example uses a `$select` query parameter to get the Internet message headers of a message. 
 <!-- {
@@ -181,6 +189,14 @@ Content-type: application/json
         }
     ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var messages = await graphClient.Me.Messages.Messages.Request().GetAsync();
+
 ```
 
 

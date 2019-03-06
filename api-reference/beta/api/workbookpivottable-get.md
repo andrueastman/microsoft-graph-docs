@@ -69,6 +69,14 @@ Content-length: 46
   "name": "name-value"
 }
 ```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var pivotTables = await graphClient.Drive.Root.Workbook.Worksheets.Worksheets.PivotTables.PivotTables.Request().GetAsync();
+
+```
 <!--
 {
   "type": "#page.annotation",

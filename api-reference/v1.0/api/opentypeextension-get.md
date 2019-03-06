@@ -156,6 +156,14 @@ Second, by its ID (fully qualified name):
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var extensions = await graphClient.Me.Messages.Messages.Extensions.Extensions.Request().GetAsync();
+
+```
+
 #### Response 1
 Here is the response for the first example.
 <!-- {
@@ -218,6 +226,14 @@ Content-type: application/json
     "dealValue": 1010100,
     "expirationDate": "2015-07-03T13:04:00Z"
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var extensions = await graphClient.Groups.Groups.Events.Events.Extensions.Extensions.Request().GetAsync();
+
 ```
 
 ****
@@ -317,6 +333,14 @@ Content-type: application/json
       }
      ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var messages = await graphClient.Me.Messages.Messages.Request().GetAsync();
+
 ```
 
 ****
@@ -467,6 +491,14 @@ Content-Type: application/json
   }
   ]
 }
+
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var messages = await graphClient.Me.Messages.Request().GetAsync();
 
 ```
 

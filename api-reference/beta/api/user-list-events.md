@@ -180,6 +180,14 @@ Content-length: 1932
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var events = await graphClient.Me.Events.Request().GetAsync();
+
+```
+
 ##### Request 2
 The second example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified message in text format.
 
@@ -221,6 +229,14 @@ Content-length: 640
         }
     ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var events = await graphClient.Me.Events.Request().GetAsync();
+
 ```
 
 

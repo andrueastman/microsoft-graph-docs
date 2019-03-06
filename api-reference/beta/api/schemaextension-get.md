@@ -80,6 +80,14 @@ Content-length: 201
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var schemaExtensions = await graphClient.SchemaExtensions.SchemaExtensions.Request().GetAsync();
+
+```
+
 ## See also
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)

@@ -73,6 +73,14 @@ Content-length: 134
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var administrativeUnits = await graphClient.AdministrativeUnits.AdministrativeUnits.Request().GetAsync();
+
+```
+
 ## See also
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)

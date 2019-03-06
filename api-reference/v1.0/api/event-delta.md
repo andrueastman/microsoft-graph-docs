@@ -126,6 +126,14 @@ Content-length: 359
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var calendarView = await graphClient.Me.CalendarView.CalendarView.Request().GetAsync();
+
+```
+
 ### See also
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)

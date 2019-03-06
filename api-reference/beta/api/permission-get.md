@@ -81,6 +81,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var permissions = await graphClient.Me.Drive.Items.Items.Permissions.Permissions.Request().GetAsync();
+
+```
+
 ## Remarks
 
 The [Permission](../resources/permission.md) resource uses _facets_ to provide information about the kind of permission represented by the resource.

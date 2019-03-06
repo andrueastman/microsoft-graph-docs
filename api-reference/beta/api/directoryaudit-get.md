@@ -60,6 +60,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 218
 ```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var directoryAudits = await graphClient.AuditLogs.DirectoryAudits.DirectoryAudits.Request().GetAsync();
+
+```
 ```json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits

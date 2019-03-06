@@ -162,6 +162,14 @@ Content-length: 1370
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var people = await graphClient.Me.People.Request().GetAsync();
+
+```
+
 For more examples, see the article [Get relevant information about people](/graph/people-example).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

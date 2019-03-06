@@ -101,6 +101,14 @@ Content-length: 608
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var users = await graphClient.Users.Request().GetAsync();
+
+```
+
 ### Example 2: Users request using $select
 
 If you need a different property set, you can use the OData `$select` query parameter. For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`
@@ -138,6 +146,14 @@ Content-length: 159
     }
   ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var users = await graphClient.Users.Request().GetAsync();
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

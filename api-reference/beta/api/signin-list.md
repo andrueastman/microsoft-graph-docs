@@ -94,6 +94,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 264
 ```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var signIns = await graphClient.AuditLogs.SignIns.Request().GetAsync();
+
+```
 ```json
 {
 	"@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",

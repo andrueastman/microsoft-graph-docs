@@ -158,6 +158,14 @@ Second, by its ID (fully qualified name):
 GET https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var extensions = await graphClient.Me.Messages.Messages.Extensions.Extensions.Request().GetAsync();
+
+```
+
 #### Response 1
 Here is the response for the first example.
 <!-- {
@@ -219,6 +227,14 @@ Content-type: application/json
     "dealValue": 1010100,
     "expirationDate": "2015-07-03T13:04:00Z"
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var extensions = await graphClient.Groups.Groups.Events.Events.Extensions.Extensions.Request().GetAsync();
+
 ```
 
 ****
@@ -319,6 +335,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var messages = await graphClient.Me.Messages.Messages.Request().GetAsync();
+
+```
+
 ****
 
 #### Request 4
@@ -360,6 +384,14 @@ Content-Type: application/json
         "Add family"
     ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var extensions = await graphClient.Groups.Groups.Threads.Threads.Posts.Posts.Extensions.Extensions.Request().GetAsync();
+
 ```
 
 
@@ -466,6 +498,14 @@ HTTP/1.1 200 OK
   }
   ]
 }
+
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var messages = await graphClient.Me.Messages.Request().GetAsync();
 
 ```
 

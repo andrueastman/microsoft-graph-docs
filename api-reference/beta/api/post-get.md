@@ -96,6 +96,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var posts = await graphClient.Groups.Groups.Threads.Threads.Posts.Posts.Request().GetAsync();
+
+```
+
 ## See also
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)

@@ -179,6 +179,14 @@ Content-length: 1928
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var events = await graphClient.Me.Events.Events.Request().GetAsync();
+
+```
+
 
 ##### Request 2
 
@@ -296,6 +304,14 @@ Content-length: 1992
     }
   }
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var events = await graphClient.Me.Events.Events.Request().GetAsync();
+
 ```
 
 

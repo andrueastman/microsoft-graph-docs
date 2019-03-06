@@ -74,6 +74,14 @@ Content-length: 82
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var rows = await graphClient.Me.Drive.Items.Items.Workbook.Tables.Tables.Rows.Request().GetAsync();
+
+```
+
 > **Note:** Use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through large numbers of rows.
 
 Example: 

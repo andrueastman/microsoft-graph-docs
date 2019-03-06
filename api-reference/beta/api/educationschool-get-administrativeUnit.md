@@ -71,6 +71,14 @@ Content-length: 134
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var administrativeUnit = await graphClient.Education.Schools.Schools.AdministrativeUnit.Request().GetAsync();
+
+```
+
 <!-- uuid: A681726F-B4A7-4BCF-9407-F87CB9A4771D
 2015-10-25 14:57:30 UTC -->
 <!--

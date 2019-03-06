@@ -114,6 +114,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var directoryRoles = await graphClient.DirectoryRoles.DirectoryRoles.Request().GetAsync();
+
+```
+
 ### See also
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for more details

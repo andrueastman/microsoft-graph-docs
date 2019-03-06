@@ -125,6 +125,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var findRooms = await graphClient.Me.FindRooms.Request().GetAsync();
+
+```
+
 ##### Request 2
 
 The second example gets the rooms in the specified room list identified by the email address Building2Rooms@contoso.onmicrosoft.com.

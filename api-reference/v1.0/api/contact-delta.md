@@ -121,6 +121,14 @@ Content-length: 337
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var contacts = await graphClient.Me.ContactFolders.ContactFolders.Contacts.Contacts.Request().GetAsync();
+
+```
+
 ### See also
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)

@@ -129,6 +129,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var messages = await graphClient.Me.Messages.Messages.Request().GetAsync();
+
+```
+
 ##### Request 2
 The second example shows how to get the event associated with an event message. It uses 
 the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, 

@@ -74,6 +74,14 @@ Content-length: 232
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var mailFolders = await graphClient.Me.MailFolders.Request().GetAsync();
+
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

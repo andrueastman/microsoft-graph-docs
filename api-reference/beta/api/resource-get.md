@@ -64,6 +64,14 @@ HTTP/1.1 200 OK
 
 ...binary data...
 ```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var content = await graphClient.Me.Onenote.Resources.Resources.Content.Request().GetAsync();
+
+```
 <!-- {
   "blockType": "response",
   "truncated": false,

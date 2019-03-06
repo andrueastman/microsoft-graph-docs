@@ -359,6 +359,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var messages = await graphClient.Me.Messages.Messages.Request().GetAsync();
+
+```
+
 #### Request 2
 
 The second example gets messages that have the string-typed single-value extended property specified in the filter. The filter 

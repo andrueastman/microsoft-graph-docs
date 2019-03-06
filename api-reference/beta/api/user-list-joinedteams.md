@@ -81,6 +81,14 @@ Content-length: 55
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var joinedTeams = await graphClient.Me.JoinedTeams.Request().GetAsync();
+
+```
+
 ## See also
 [List all teams](/graph/teams-list-all-teams)
 

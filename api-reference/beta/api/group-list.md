@@ -159,6 +159,14 @@ Content-type: application/json
 
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var groups = await graphClient.Groups.Request().GetAsync();
+
+```
+
 #### Request 2
 This example uses a `$filter` query option to get those groups that have members with license errors from their group-based license assignments. It also uses a `$select` query option to get only the **id** and **displayName** properties of each group in the response, and not other default or non-default properties.
 <!-- {
@@ -196,6 +204,14 @@ Content-type: application/json
         }
     ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var groups = await graphClient.Groups.Request().GetAsync();
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

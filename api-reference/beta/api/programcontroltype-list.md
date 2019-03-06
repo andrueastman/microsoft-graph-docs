@@ -80,6 +80,14 @@ Content-type: application/json
 
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var programControlTypes = await graphClient.ProgramControlTypes.Request().GetAsync();
+
+```
+
 ## See also
 
 | Method		   | Return Type	|Description|

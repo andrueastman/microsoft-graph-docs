@@ -143,6 +143,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var activities = await graphClient.Me.Drive.Activities.Request().GetAsync();
+
+```
+
 <!--
 {
   "type": "#page.annotation",

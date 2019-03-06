@@ -172,6 +172,14 @@ Content-length: 1326
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var people = await graphClient.Me.People.Request().GetAsync();
+
+```
+
 #### Requesting a subsequent page of people
 
 If the first response does not contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request additional pages of information. If the previous request has additional information, the following request gets the next page of people from the server.

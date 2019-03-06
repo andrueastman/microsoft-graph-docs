@@ -179,6 +179,14 @@ Content-Type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var schema = await graphClient.ServicePrincipals.ServicePrincipals.Synchronization.Jobs.Jobs.Schema.Request().GetAsync();
+
+```
+
 ## Add a definition for the officeCode attribute and a mapping between attributes
 
 Use a plain text editor of your choice (for example, [Notepad++](https://notepad-plus-plus.org/) or [JSON Editor Online](https://www.jsoneditoronline.org/)) to:

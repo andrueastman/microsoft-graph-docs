@@ -119,6 +119,14 @@ Content-length: 317
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var messages = await graphClient.Me.Messages.Request().GetAsync();
+
+```
+
 
 ##### Request 2
 The next example filters all messages in the signed-in user's mailbox for those that mention the user. It uses `$select` 
@@ -182,6 +190,14 @@ Content-length: 987
     }
   ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var messages = await graphClient.Me.Messages.Request().GetAsync();
+
 ```
 
 ##### Request 3
@@ -260,6 +276,14 @@ Content-length: 2704
         }
     ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var messages = await graphClient.Me.Messages.Request().GetAsync();
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

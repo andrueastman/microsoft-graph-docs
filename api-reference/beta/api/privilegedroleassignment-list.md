@@ -78,6 +78,14 @@ Content-length: 237
   ]
 }
 ```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var privilegedRoleAssignments = await graphClient.PrivilegedRoleAssignments.Request().GetAsync();
+
+```
 ### Get active role assignments
 ##### Request 
 The following example shows a request to query active role assignments:
@@ -122,6 +130,14 @@ Content-length: 237
   ]
 }
 ```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var privilegedRoleAssignments = await graphClient.PrivilegedRoleAssignments.Request().GetAsync();
+
+```
 ### Get permanent role assignments
 ##### Request 
 The following example shows a request to query permanent role assignments, where ``expirationDateTime`` value is ``null``:
@@ -165,6 +181,14 @@ Content-length: 237
         }
   ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var privilegedRoleAssignments = await graphClient.PrivilegedRoleAssignments.Request().GetAsync();
+
 ```
 ### Get eligible role assignments
 ##### Request 
@@ -225,6 +249,14 @@ Content-length: 237
         }
   ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var privilegedRoleAssignments = await graphClient.PrivilegedRoleAssignments.Request().GetAsync();
+
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

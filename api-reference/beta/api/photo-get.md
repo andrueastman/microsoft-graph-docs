@@ -67,6 +67,14 @@ Content-length: 53
   "id": "id-value"
 }
 ```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var photo = await graphClient.Users.Users.Photo.Request().GetAsync();
+
+```
 ##### Request
 Here is an example of the request for the photo bytes.
 <!-- {

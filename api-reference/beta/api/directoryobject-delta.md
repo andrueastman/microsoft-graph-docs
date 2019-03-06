@@ -172,6 +172,22 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var directoryObjects = await graphClient.DirectoryObjects.DirectoryObjects.Request().GetAsync();
+
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var directoryObjects = await graphClient.DirectoryObjects.DirectoryObjects.Request().GetAsync();
+
+```
+
 ### Request 2
 
 The next example shows the use of the alternative minimal response behavior:
@@ -282,6 +298,14 @@ Content-type: application/json
     }
   ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var directoryObjects = await graphClient.DirectoryObjects.DirectoryObjects.Request().GetAsync();
+
 ```
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).

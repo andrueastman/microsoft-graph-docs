@@ -148,6 +148,14 @@ Content-length: 199
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var attachments = await graphClient.Me.Events.Events.Attachments.Attachments.Request().GetAsync();
+
+```
+
 ## Example (item attachment)
 
 ### Request 1
@@ -184,6 +192,14 @@ Content-type: application/json
   "size":32005,
   "isInline":false
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var attachments = await graphClient.Me.Messages.Messages.Attachments.Attachments.Request().GetAsync();
+
 ```
 
 ### Request 2
@@ -278,6 +294,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var attachments = await graphClient.Me.Messages.Messages.Attachments.Attachments.Request().GetAsync();
+
+```
+
 ## Example (reference attachment)
 
 ### Request
@@ -320,6 +344,14 @@ Content-type: application/json
   "permission": "edit",
   "isFolder": true
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var attachments = await graphClient.Me.Events.Events.Attachments.Attachments.Request().GetAsync();
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

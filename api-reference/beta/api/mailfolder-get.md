@@ -100,6 +100,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var mailFolders = await graphClient.Me.MailFolders.MailFolders.Request().GetAsync();
+
+```
+
 ### Example 2: Get a mail search folder
 
 #### Request
@@ -147,6 +155,14 @@ Content-type: application/json
   ],
   "filterQuery": "contains(subject, 'MyAnalytics')"
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var mailFolders = await graphClient.Me.MailFolders.MailFolders.Request().GetAsync();
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

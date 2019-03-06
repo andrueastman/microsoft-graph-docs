@@ -26,6 +26,14 @@ Content-Type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var me = await graphClient.Me.Request().GetAsync();
+
+```
+
 
 ## Define drives as an queryable entityset
 <!-- {"blockType": "request", "name": "get_drive_from_id" } -->
@@ -40,6 +48,14 @@ Content-Type: application/json
 
 {
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var drives = await graphClient.Drives.Drives.Request().GetAsync();
+
 ```
 
 
@@ -57,4 +73,12 @@ Content-Type: application/json
 
 {
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var users = await graphClient.Users.Users.Request().GetAsync();
+
 ```

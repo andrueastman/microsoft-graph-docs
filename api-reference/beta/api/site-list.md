@@ -86,6 +86,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var sites = await graphClient.Sites.Request().GetAsync();
+
+```
+
 <!--
 {
   "type": "#page.annotation",

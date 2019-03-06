@@ -151,6 +151,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var contacts = await graphClient.Me.Contacts.Contacts.Request().GetAsync();
+
+```
+
 ## See also
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)

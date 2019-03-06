@@ -65,6 +65,14 @@ Content-length: 53
   "id": "id-value"
 }
 ```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var photo = await graphClient.Users.Users.Photo.Request().GetAsync();
+
+```
 ##### Request
 Here is an example of the request for the photo bytes.
 <!-- {
@@ -94,6 +102,14 @@ Date: Wed, 13 Dec 2017 22:02:17 GMT
 Content-Length: 250526
 
 <binary image data>
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var $value = await graphClient.Users.Users.Photo.$value.Request().GetAsync();
+
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

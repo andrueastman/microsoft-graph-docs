@@ -76,6 +76,14 @@ Content-length: 322
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var devices = await graphClient.Devices.Devices.Request().GetAsync();
+
+```
+
 ## See also
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)

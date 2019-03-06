@@ -87,6 +87,14 @@ Content-length: 55
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var installedApps = await graphClient.Teams.Teams.InstalledApps.Request().GetAsync();
+
+```
+
 ## Example -- getting the names of the installed apps
 
 ### Request
@@ -149,6 +157,14 @@ Content-length: 55
         }
   ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var installedApps = await graphClient.Teams.Teams.InstalledApps.Request().GetAsync();
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -92,3 +92,11 @@ Content-Length: 1110
   ]
 }
 ```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var notebooks = await graphClient.Me.Onenote.Notebooks.Notebooks.Request().GetAsync();
+
+```

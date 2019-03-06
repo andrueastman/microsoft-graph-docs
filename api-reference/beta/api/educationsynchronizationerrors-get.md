@@ -94,3 +94,11 @@ Content-length: 1568
     ]
 }
 ```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var errors = await graphClient.Education.SynchronizationProfiles.SynchronizationProfiles.Errors.Request().GetAsync();
+
+```

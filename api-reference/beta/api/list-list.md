@@ -41,6 +41,14 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var lists = await graphClient.Sites.Sites.Lists.Request().GetAsync();
+
+```
+
 ##### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->

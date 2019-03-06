@@ -84,6 +84,14 @@ Content-length: xxx
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var group = await graphClient.Education.Classes.Classes.Group.Request().GetAsync();
+
+```
+
 <!-- uuid: 0087D9B3-1418-4C87-91C9-A18C6D93706B
 2015-10-25 14:57:30 UTC -->
 <!--

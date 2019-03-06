@@ -83,6 +83,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var bookingBusinesses = await graphClient.BookingBusinesses.Request().GetAsync();
+
+```
+
 
 ##### Request 2
 The following example shows how to use the `query` parameter to get one or more matching Bookings businesses in the tenant.
@@ -114,6 +122,14 @@ Content-type: application/json
         }
     ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var bookingBusinesses = await graphClient.BookingBusinesses.Request().GetAsync();
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

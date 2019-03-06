@@ -74,6 +74,14 @@ Content-length: 126
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var columns = await graphClient.Me.Drive.Items.Items.Workbook.Tables.Tables.Columns.Request().GetAsync();
+
+```
+
 > **Note:** Use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through large numbers of columns.
 
 Example: 

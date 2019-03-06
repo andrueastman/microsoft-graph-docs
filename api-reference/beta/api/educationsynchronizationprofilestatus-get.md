@@ -68,6 +68,14 @@ Content-length: 232
     "lastSynchronizationDateTime": "2017-07-04T22:06:37.6472621Z"
 }
 ```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var profileStatus = await graphClient.Education.SynchronizationProfiles.SynchronizationProfiles.ProfileStatus.Request().GetAsync();
+
+```
 <!--
 {
   "type": "#page.annotation",

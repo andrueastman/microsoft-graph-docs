@@ -122,6 +122,14 @@ Content-length: 254
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var contactFolders = await graphClient.Me.ContactFolders.ContactFolders.Request().GetAsync();
+
+```
+
 ### See also
 
 - [Microsoft Graph delta query](/graph/delta-query-overview)

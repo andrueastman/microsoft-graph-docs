@@ -131,6 +131,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var mailboxSettings = await graphClient.Me.MailboxSettings.Request().GetAsync();
+
+```
+
 ##### Request 2
 The second example gets specifically the automatic replies settings of the signed-in user's mailbox.
 <!-- {
@@ -168,6 +176,14 @@ Content-type: application/json
     "internalReplyMessage": "<html>\n<body>\n<p>I'm at our company's worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n",
     "externalReplyMessage": "<html>\n<body>\n<p>I'm at the Contoso worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n"
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var automaticRepliesSetting = await graphClient.Me.MailboxSettings.AutomaticRepliesSetting.Request().GetAsync();
+
 ```
 
 

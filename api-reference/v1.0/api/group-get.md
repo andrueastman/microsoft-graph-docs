@@ -99,6 +99,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var groups = await graphClient.Groups.Groups.Request().GetAsync();
+
+```
+
 #### Request 2
 The next example uses a `$select` query option to get a few properties that are not returned by default. 
 <!-- {
@@ -131,6 +139,14 @@ Content-type: application/json
     "isSubscribedByMail": false,
     "unseenCount": 0
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var groups = await graphClient.Groups.Groups.Request().GetAsync();
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

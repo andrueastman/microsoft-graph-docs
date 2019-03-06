@@ -128,6 +128,14 @@ Content-length: 359
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var delta = await graphClient.Me.Calendarview.Delta.Request().GetAsync();
+
+```
+
 ### See also
 
 - [Microsoft Graph delta query](/graph/delta-query-overview)

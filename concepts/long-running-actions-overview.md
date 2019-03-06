@@ -136,6 +136,14 @@ Content-type: application/json
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var items = await graphClient.Me.Drive.Items.Items.Request().GetAsync();
+
+```
+
 ## Supported resources
 
 Long running actions are supported on the following API methods

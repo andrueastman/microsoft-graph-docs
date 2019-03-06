@@ -112,6 +112,14 @@ Content-length: 523
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var messages = await graphClient.Me.Messages.Messages.Request().GetAsync();
+
+```
+
 ##### Request 2
 In the next example, the signed-in user is Dana Swope. The example shows getting the details of all the mentions in the specified message in Dana's mailbox.
 <!-- {
@@ -268,6 +276,14 @@ Content-length: 1550
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var messages = await graphClient.Me.Messages.Messages.Request().GetAsync();
+
+```
+
 ##### Request 4
 
 The fourth example shows how to get the Internet message headers of a specific message.  
@@ -323,6 +339,14 @@ Content-type: application/json
     }
   ]
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var messages = await graphClient.Me.Messages.Messages.Request().GetAsync();
+
 ```
 
 ## See also

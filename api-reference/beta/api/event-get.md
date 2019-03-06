@@ -175,6 +175,14 @@ Content-length: 1928
 }
 ```
 
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var events = await graphClient.Me.Events.Events.Request().GetAsync();
+
+```
+
 ##### Request 2
 The second example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified event in text format.
 
@@ -214,6 +222,14 @@ Content-length: 636
         "content":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.\r\n"
     }
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var events = await graphClient.Me.Events.Events.Request().GetAsync();
+
 ```
 
 
@@ -331,6 +347,14 @@ Content-length: 1992
     }
   }
 }
+```
+
+##### Example Code
+
+```C#
+GraphServiceClient graphClient = new GraphServiceClient();
+var events = await graphClient.Me.Events.Events.Request().GetAsync();
+
 ```
 
 ## See also
