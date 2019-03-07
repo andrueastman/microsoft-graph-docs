@@ -63,3 +63,4 @@ Content-Type: application/json
 {
 }
 ```
+[!include[Example Code]( ../includes/\api-reference\v1.0\resources\intune-shared-reportroot.md #0-snippets.md)]
