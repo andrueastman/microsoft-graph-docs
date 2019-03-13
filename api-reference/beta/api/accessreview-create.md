@@ -137,6 +137,7 @@ Content-type: application/json
     "description": "Sample description"
 }
 ```
+[!include[Example Code]( ../includes/create_accessReview_from_accessReviews-snippets.md)]
 
 <!--
 {

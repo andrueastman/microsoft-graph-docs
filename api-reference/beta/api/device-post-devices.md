@@ -96,6 +96,7 @@ Content-length: 364
   "deviceVersion": 99
 }
 ```
+[!include[Example Code]( ../includes/create_device_from_devices-snippets.md)]
 
 ## See also
 

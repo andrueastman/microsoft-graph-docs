@@ -67,3 +67,4 @@ Content-length: 194
   "index": 99
 }
 ```
+[!include[Example Code]( ../includes/workbookrange_visibleview-snippets.md)]

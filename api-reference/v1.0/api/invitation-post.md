@@ -103,6 +103,7 @@ Content-length: 551
   "invitedUser": { "id": "243b1de4-ad9f-421c-a933-d55305fb165d" }
 }
 ```
+[!include[Example Code]( ../includes/create_user_from_users-snippets.md)]
 
 <!-- {
   "type": "#page.annotation",

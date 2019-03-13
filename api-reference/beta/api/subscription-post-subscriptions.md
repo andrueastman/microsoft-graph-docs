@@ -122,6 +122,7 @@ Content-length: 252
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
+[!include[Example Code]( ../includes/create_subscription_from_subscriptions-snippets.md)]
 
 ## Notification endpoint validation
 

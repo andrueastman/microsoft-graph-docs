@@ -91,6 +91,7 @@ Content-type: application/json
   "createdDateTime": "2018-05-18T20:26:05.2976279Z"
 }
 ```
+[!include[Example Code]( ../includes/create_programControl_from_programControls-snippets.md)]
 
 ## See also
 

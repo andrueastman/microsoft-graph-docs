@@ -80,6 +80,7 @@ Content-length: 172
   }
 }
 ```
+[!include[Example Code]( ../includes/create_administrativeunit_from_administrativeunits-snippets.md)]
 
 ## See also
 

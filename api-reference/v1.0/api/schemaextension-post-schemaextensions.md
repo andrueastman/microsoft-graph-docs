@@ -131,6 +131,7 @@ Content-length: 420
     ]
 }
 ```
+[!include[Example Code]( ../includes/create_schemaextension_from_schemaextensions_1-snippets.md)]
 
 ##### Request 2
 

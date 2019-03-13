@@ -66,6 +66,7 @@ Content-Type: application/json
 {
 }
 ```
+[!include[Example Code]( ../includes/range_sort-snippets.md)]
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

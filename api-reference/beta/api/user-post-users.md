@@ -102,6 +102,7 @@ Content-type: application/json
     "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
 }
 ```
+[!include[Example Code]( ../includes/create_user_from_users_2-snippets.md)]
 
 ## See also
 

@@ -137,6 +137,7 @@ Content-type: application/json
 	  "onPremisesProvisioningErrors": []
 }
 ```
+[!include[Example Code]( ../includes/create_group-snippets.md)]
 
 #### Request 2
 The second example request creates an Office 365 group with an owner and members specified.

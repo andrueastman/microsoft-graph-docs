@@ -98,6 +98,7 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+[!include[Example Code]( ../includes/reportroot_getteamsuseractivitycounts_csv-snippets.md)]
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
 <!-- {
@@ -162,6 +163,7 @@ Content-Length: 277
   ]
 }
 ```
+[!include[Example Code]( ../includes/reportroot_getteamsuseractivitycounts_json-snippets.md)]
 <!--
 {
   "type": "#page.annotation",

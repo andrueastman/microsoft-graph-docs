@@ -77,6 +77,7 @@ Content-type: application/json
     "description": "test description"
 }
 ```
+[!include[Example Code]( ../includes/create_program_from_programs-snippets.md)]
 
 ## See also
 

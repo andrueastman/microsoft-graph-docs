@@ -70,3 +70,4 @@ Content-length: 157
   "columnIndex": 99
 }
 ```
+[!include[Example Code]( ../includes/workbookrangeview_range-snippets.md)]
