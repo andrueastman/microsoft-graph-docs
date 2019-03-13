@@ -4,6 +4,6 @@
 ```C#
 
 GraphServiceClient graphClient = new GraphServiceClient();
-var getSkypeForBusinessPeerToPeerActivityUserCounts = await graphClient.Reports.GetSkypeForBusinessPeerToPeerActivityUserCounts.Request().GetAsync();
+var getSkypeForBusinessPeerToPeerActivityUserCounts = await graphClient.Reports.GetSkypeForBusinessPeerToPeerActivityUserCounts().Request().GetAsync();
 
 ```

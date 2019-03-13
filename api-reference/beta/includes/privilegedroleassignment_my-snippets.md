@@ -4,6 +4,6 @@
 ```C#
 
 GraphServiceClient graphClient = new GraphServiceClient();
-var my = await graphClient.PrivilegedRoleAssignments.My.Request().GetAsync();
+var my = await graphClient.PrivilegedRoleAssignments.My().Request().GetAsync();
 
 ```

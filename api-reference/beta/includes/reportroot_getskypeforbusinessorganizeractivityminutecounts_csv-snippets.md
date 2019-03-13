@@ -4,6 +4,6 @@
 ```C#
 
 GraphServiceClient graphClient = new GraphServiceClient();
-var getSkypeForBusinessOrganizerActivityMinuteCounts = await graphClient.Reports.GetSkypeForBusinessOrganizerActivityMinuteCounts.Request().GetAsync();
+var getSkypeForBusinessOrganizerActivityMinuteCounts = await graphClient.Reports.GetSkypeForBusinessOrganizerActivityMinuteCounts().Request().GetAsync();
 
 ```

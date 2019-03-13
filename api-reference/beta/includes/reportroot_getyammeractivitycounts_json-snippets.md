@@ -4,6 +4,6 @@
 ```C#
 
 GraphServiceClient graphClient = new GraphServiceClient();
-var getYammerActivityCounts = await graphClient.Reports.GetYammerActivityCounts.Request().GetAsync();
+var getYammerActivityCounts = await graphClient.Reports.GetYammerActivityCounts().Request().GetAsync();
 
 ```

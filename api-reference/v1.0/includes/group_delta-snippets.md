@@ -4,6 +4,6 @@
 ```C#
 
 GraphServiceClient graphClient = new GraphServiceClient();
-var delta = await graphClient.Groups.Delta.Request().GetAsync();
+var delta = await graphClient.Groups.Delta().Request().GetAsync();
 
 ```

@@ -4,6 +4,6 @@
 ```C#
 
 GraphServiceClient graphClient = new GraphServiceClient();
-var getTeamsUserActivityCounts = await graphClient.Reports.GetTeamsUserActivityCounts.Request().GetAsync();
+var getTeamsUserActivityCounts = await graphClient.Reports.GetTeamsUserActivityCounts().Request().GetAsync();
 
 ```

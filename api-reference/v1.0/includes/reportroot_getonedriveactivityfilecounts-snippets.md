@@ -4,6 +4,6 @@
 ```C#
 
 GraphServiceClient graphClient = new GraphServiceClient();
-var getOneDriveActivityFileCounts = await graphClient.Reports.GetOneDriveActivityFileCounts.Request().GetAsync();
+var getOneDriveActivityFileCounts = await graphClient.Reports.GetOneDriveActivityFileCounts().Request().GetAsync();
 
 ```

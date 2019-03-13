@@ -4,6 +4,6 @@
 ```C#
 
 GraphServiceClient graphClient = new GraphServiceClient();
-var getSharePointSiteUsageStorage = await graphClient.Reports.GetSharePointSiteUsageStorage.Request().GetAsync();
+var getSharePointSiteUsageStorage = await graphClient.Reports.GetSharePointSiteUsageStorage().Request().GetAsync();
 
 ```

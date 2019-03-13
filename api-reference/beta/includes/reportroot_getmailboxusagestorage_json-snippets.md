@@ -4,6 +4,6 @@
 ```C#
 
 GraphServiceClient graphClient = new GraphServiceClient();
-var getMailboxUsageStorage = await graphClient.Reports.GetMailboxUsageStorage.Request().GetAsync();
+var getMailboxUsageStorage = await graphClient.Reports.GetMailboxUsageStorage().Request().GetAsync();
 
 ```

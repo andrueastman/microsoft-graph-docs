@@ -4,6 +4,6 @@
 ```C#
 
 GraphServiceClient graphClient = new GraphServiceClient();
-var getOffice365ServicesUserCounts = await graphClient.Reports.GetOffice365ServicesUserCounts.Request().GetAsync();
+var getOffice365ServicesUserCounts = await graphClient.Reports.GetOffice365ServicesUserCounts().Request().GetAsync();
 
 ```

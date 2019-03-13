@@ -4,6 +4,6 @@
 ```C#
 
 GraphServiceClient graphClient = new GraphServiceClient();
-var getEmailActivityUserCounts = await graphClient.Reports.GetEmailActivityUserCounts.Request().GetAsync();
+var getEmailActivityUserCounts = await graphClient.Reports.GetEmailActivityUserCounts().Request().GetAsync();
 
 ```

@@ -4,6 +4,6 @@
 ```C#
 
 GraphServiceClient graphClient = new GraphServiceClient();
-var reminderView = await graphClient.Me.ReminderView.Request().GetAsync();
+var reminderView = await graphClient.Me.ReminderView().Request().GetAsync();
 
 ```

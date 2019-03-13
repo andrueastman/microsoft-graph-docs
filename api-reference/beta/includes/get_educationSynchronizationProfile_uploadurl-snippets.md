@@ -4,6 +4,6 @@
 ```C#
 
 GraphServiceClient graphClient = new GraphServiceClient();
-var uploadUrl = await graphClient.Education.SynchronizationProfiles["{id}"].UploadUrl.Request().GetAsync();
+var uploadUrl = await graphClient.Education.SynchronizationProfiles["{id}"].UploadUrl().Request().GetAsync();
 
 ```
