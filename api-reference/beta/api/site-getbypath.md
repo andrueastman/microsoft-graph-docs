@@ -69,6 +69,7 @@ HTTP/1.1 200 OK
   "webUrl": "https://contoso.sharepoint.com/teams/1drvteam"
 }
 ```
+[!include[Example Code]( ../includes/get-site-by-hostname-and-path-snippets.md)]
 
 <!--
 {

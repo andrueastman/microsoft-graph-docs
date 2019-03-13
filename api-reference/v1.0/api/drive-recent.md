@@ -80,6 +80,7 @@ Content-Type: application/json
   ]
 }
 ```
+[!include[Example Code]( ../includes/view-recent-files-snippets.md)]
 
 ## Remarks
 

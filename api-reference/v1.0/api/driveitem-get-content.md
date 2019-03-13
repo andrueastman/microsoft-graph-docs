@@ -49,6 +49,7 @@ Here is an example to download a complete file.
 ```http
 GET /me/drive/items/{item-id}/content
 ```
+[!include[Example Code]( ../includes/download-item-content-snippets.md)]
 
 ### Response
 
@@ -91,6 +92,7 @@ Content-Type: application/octet-stream
 
 <first 1024 bytes of file>
 ```
+[!include[Example Code]( ../includes/download-item-partial-snippets.md)]
 
 ### Error responses
 

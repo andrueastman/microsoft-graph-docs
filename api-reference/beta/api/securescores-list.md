@@ -123,6 +123,7 @@ Content-type: application/json
 }
 
 ```
+[!include[Example Code]( ../includes/securescores_list-snippets.md)]
 
 
 <!--

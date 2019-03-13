@@ -76,3 +76,4 @@ Content-length: 194
   "index": 99
 }
 ```
+[!include[Example Code]( ../includes/workbookrangeview_itemat-snippets.md)]

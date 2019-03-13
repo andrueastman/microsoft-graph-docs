@@ -79,6 +79,7 @@ Content-type: application/json
 }
 
 ```
+[!include[Example Code]( ../includes/get_businesFlowTemplate-snippets.md)]
 
 ## See also
 

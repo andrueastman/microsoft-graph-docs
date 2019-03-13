@@ -58,6 +58,7 @@ To retrieve files in the root of the drive, use the `root` relationship on the d
 ```http
 GET /me/drive/root/children
 ```
+[!include[Example Code]( ../includes/list-children-snippets.md)]
 
 
 ### List children of a DriveItem with a known ID
@@ -69,6 +70,7 @@ To retrieve files in the root of the drive, use the `root` relationship on the d
 ```http
 GET /drives/{drive-id}/items/{item-id}/children
 ```
+[!include[Example Code]( ../includes/list-children-root-snippets.md)]
 
 ### List children of a DriveItem with a known path
 
@@ -102,6 +104,7 @@ Content-type: application/json
   "@odata.nextLink": "https://..."
 }
 ```
+[!include[Example Code]( ../includes/list-children-from-path-snippets.md)]
 
 **Note:** If a collection exceeds the default page size (200 items), the **@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.
 

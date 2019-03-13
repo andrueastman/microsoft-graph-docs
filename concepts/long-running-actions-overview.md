@@ -77,6 +77,8 @@ Content-type: application/json
   "status": "inProgress"
 }
 ```
+[!include[Example Code]( ../includes/lro-check-status-complete-snippets.md)]
+[!include[Example Code]( ../includes/lro-check-status-snippets.md)]
 
 This information can be used to provide an update to the user about the progress of the copy action.
 The app can continue to poll the monitor URL to request status updates and keep track of the progress of the action.
@@ -135,6 +137,7 @@ Content-type: application/json
     "size": 12019
 }
 ```
+[!include[Example Code]( ../includes/lro-copy-item-example-complete-snippets.md)]
 
 ## Supported resources
 

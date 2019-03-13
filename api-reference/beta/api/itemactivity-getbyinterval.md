@@ -92,6 +92,7 @@ Content-type: application/json
     ]
 }
 ```
+[!include[Example Code]( ../includes/get-activities-by-interval-snippets.md)]
 
 <!--
 {

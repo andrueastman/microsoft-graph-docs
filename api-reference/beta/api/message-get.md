@@ -111,6 +111,7 @@ Content-length: 523
     }
 }
 ```
+[!include[Example Code]( ../includes/get_message-snippets.md)]
 
 ##### Request 2
 In the next example, the signed-in user is Dana Swope. The example shows getting the details of all the mentions in the specified message in Dana's mailbox.
@@ -219,6 +220,7 @@ Content-length: 2248
   ]
 }
 ```
+[!include[Example Code]( ../includes/get_mentions_in_message-snippets.md)]
 
 
 ##### Request 3
@@ -267,6 +269,7 @@ Content-length: 1550
     }
 }
 ```
+[!include[Example Code]( ../includes/get_message_in_text-snippets.md)]
 
 ##### Request 4
 
@@ -324,6 +327,7 @@ Content-type: application/json
   ]
 }
 ```
+[!include[Example Code]( ../includes/get_message_internet_headers-snippets.md)]
 
 ## See also
 

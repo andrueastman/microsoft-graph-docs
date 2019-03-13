@@ -62,6 +62,7 @@ Content-Type: application/json
   "webUrl": "https://contoso.sharepoint.com/teams/1drvteam"
 }
 ```
+[!include[Example Code]( ../includes/get-site-by-hostname-and-path-snippets.md)]
 
 <!-- {
   "type": "#page.annotation",

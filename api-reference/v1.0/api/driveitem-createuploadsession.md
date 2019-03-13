@@ -305,6 +305,7 @@ Content-Type: application/json
   "nextExpectedRanges": ["12345-"]
 }
 ```
+[!include[Example Code]( ../includes/upload-fragment-resume-snippets.md)]
 
 ### Upload remaining data
 

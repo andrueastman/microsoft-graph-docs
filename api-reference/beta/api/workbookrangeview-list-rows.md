@@ -78,6 +78,7 @@ Content-length: 247
   ]
 }
 ```
+[!include[Example Code]( ../includes/get_rows-snippets.md)]
 <!--
 {
   "type": "#page.annotation",

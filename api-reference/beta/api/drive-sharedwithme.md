@@ -75,6 +75,7 @@ Content-Type: application/json
   ]
 }
 ```
+[!include[Example Code]( ../includes/shared-with-me-snippets.md)]
 
 ## Remarks
 
