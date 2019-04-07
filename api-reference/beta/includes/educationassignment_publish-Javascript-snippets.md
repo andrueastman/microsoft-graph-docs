@@ -1,0 +1,16 @@
+
+```Javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+const publish = ;
+
+let res = await client.api('/education/classes/11021/assignments/19002/publish')
+	.version('beta')
+	.post();
+
+```
