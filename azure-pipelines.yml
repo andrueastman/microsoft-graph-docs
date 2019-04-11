@@ -6,11 +6,7 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'Ubuntu-16.04'
-
 steps:
-
 - task: PowerShell@2
   inputs:
     filePath: 'Test-Docs.ps1'
