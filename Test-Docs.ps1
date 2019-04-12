@@ -45,7 +45,7 @@ else {
 	{
 		# Download ApiDoctor from GitHub	
 		Write-Host "Cloning API Doctor repository from GitHub"
-		& git clone -b develop $apiDoctorVersion --recurse-submodules "$apidocPath\SourceCode"
+		& git clone -b generate-snippets $apiDoctorVersion --recurse-submodules "$apidocPath\SourceCode"
 		$downloadedApiDoctor = $true
 		
 		$nugetParams = "restore", "$apidocPath\SourceCode"
@@ -81,16 +81,11 @@ else {
 
 $lastResultCode = 0
 
-# Run validation at the root of the repository
-$appVeyorUrl = $env:APPVEYOR_API_URL
-
-$params = "check-all", "--path", $repoPath
-if ($appVeyorUrl -ne $null)
-{
-    $params = $params += "--appveyor-url", $appVeyorUrl
-}
+# Run the snippet generator
+$params = "generate-snippets", "--path", $repoPath ,"--snippet-api-url" , $env:SNIPPET_API_URL ,"--lang", $env:LANGUAGES , "--github-token" , $env:GITHUB_TOKEN
 
 & $apidoc $params
+
 
 if ($LastExitCode -ne 0) { 
     $lastResultCode = $LastExitCode
