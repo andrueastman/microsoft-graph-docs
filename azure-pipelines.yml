@@ -13,4 +13,4 @@ steps:
 - task: Powershell@2
   inputs:
     targetType: filePath
-    filePath: .\Test-Docs.ps1
+    filePath: .\Generate-Snippets.ps1
