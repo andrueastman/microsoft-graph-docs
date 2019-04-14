@@ -82,7 +82,7 @@ else {
 $lastResultCode = 0
 
 # Run the snippet generator
-$params = "generate-snippets", "--path", $repoPath ,"--snippet-api-url" , $env:SNIPPET_API_URL ,"--lang", $env:LANGUAGES , "--github-token" , $env:GITHUB_TOKEN
+$params = "generate-snippets", "--path", $repoPath ,"git-path",$env:GIT_PATH,"--snippet-api-url" , $env:SNIPPET_API_URL ,"--lang", $env:LANGUAGES , "--github-token" , $env:GITHUB_TOKEN
 
 & $apidoc $params
 
