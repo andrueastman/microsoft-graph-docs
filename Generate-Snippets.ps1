@@ -86,7 +86,7 @@ git remote rm origin
 git remote add origin $env:GIT_REMOTE_URL
 
 # Run the snippet generator
-$params = "generate-snippets", "--path", $repoPath ,"--verbose","false","--git-path",$env:GIT_PATH,"--snippet-api-url" , $env:SNIPPET_API_URL ,"--lang", $env:LANGUAGES , "--github-token" , $env:GITHUB_TOKEN
+$params = "generate-snippets", "--path", $repoPath ,"--ignore-warnings","--git-path",$env:GIT_PATH,"--snippet-api-url" , $env:SNIPPET_API_URL ,"--lang", $env:LANGUAGES , "--github-token" , $env:GITHUB_TOKEN
 
 & $apidoc $params
 
