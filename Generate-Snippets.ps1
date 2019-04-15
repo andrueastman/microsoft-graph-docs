@@ -99,3 +99,5 @@ if ($cleanUp -eq $true) {
         Remove-Item $apidocPath -Recurse -Force
     }
 }
+
+exit 0
