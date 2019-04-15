@@ -136,6 +136,10 @@ Content-type: application/json
 }
 ```
 [!INCLUDE [Sample Code]( ../includes/lro-copy-item-example-complete-snippets.md)]
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/lro-copy-item-example-complete-C#-snippets.md)]
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/lro-copy-item-example-complete-Javascript-snippets.md)]
 
 ## Supported resources
 

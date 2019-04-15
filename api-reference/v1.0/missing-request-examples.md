@@ -26,6 +26,10 @@ Content-Type: application/json
 }
 ```
 [!INCLUDE [Sample Code]( ../includes/get_current_user-snippets.md)]
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_current_user-C#-snippets.md)]
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_current_user-Javascript-snippets.md)]
 
 
 ## Define drives as an queryable entityset
@@ -43,6 +47,10 @@ Content-Type: application/json
 }
 ```
 [!INCLUDE [Sample Code]( ../includes/get_drive_from_id-snippets.md)]
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_drive_from_id-C#-snippets.md)]
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_drive_from_id-Javascript-snippets.md)]
 
 
 ## define users as an queryable entityset
@@ -61,3 +69,7 @@ Content-Type: application/json
 }
 ```
 [!INCLUDE [Sample Code]( ../includes/get_users-snippets.md)]
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_users-C#-snippets.md)]
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_users-Javascript-snippets.md)]
