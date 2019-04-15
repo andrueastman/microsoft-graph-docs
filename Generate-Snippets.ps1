@@ -79,8 +79,6 @@ else {
 	$downloadedApiDoctor = $true
 }
 
-$lastResultCode = 0
-
 git config --global user.name "ApiDoctor"
 git config --global user.email "ApiDoctor"
 git remote rm origin
@@ -91,11 +89,6 @@ $params = "generate-snippets", "--path", $repoPath ,"--git-path",$env:GIT_PATH,"
 
 & $apidoc $params
 
-
-if ($LastExitCode -ne 0) { 
-    $lastResultCode = $LastExitCode
-}
-
 # Clean up the stuff we downloaded
 if ($cleanUp -eq $true) {
     if ($downloadedNuGet -eq $true) {
@@ -104,9 +97,4 @@ if ($cleanUp -eq $true) {
     if ($downloadedApiDoctor -eq $true) {
         Remove-Item $apidocPath -Recurse -Force
     }
-}
-
-if ($lastResultCode -ne 0) {
-    Write-Host "Errors were detected. This build failed."
-    exit $lastResultCode
 }
