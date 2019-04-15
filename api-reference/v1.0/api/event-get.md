@@ -179,10 +179,6 @@ Content-length: 1928
 }
 ```
 [!INCLUDE [Sample Code]( ../includes/get_event-snippets.md)]
-# [C#](#tab/CS)
-[!INCLUDE [Sample Code]( ../includes/get_event-C#-snippets.md)]
-# [Javascript](#tab/Javascript)
-[!INCLUDE [Sample Code]( ../includes/get_event-Javascript-snippets.md)]
 
 
 ##### Request 2
@@ -303,10 +299,6 @@ Content-length: 1992
 }
 ```
 [!INCLUDE [Sample Code]( ../includes/get_event_multiple_locations-snippets.md)]
-# [C#](#tab/CS)
-[!INCLUDE [Sample Code]( ../includes/get_event_multiple_locations-C#-snippets.md)]
-# [Javascript](#tab/Javascript)
-[!INCLUDE [Sample Code]( ../includes/get_event_multiple_locations-Javascript-snippets.md)]
 
 
 
