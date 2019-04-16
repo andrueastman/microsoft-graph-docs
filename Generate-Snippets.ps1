@@ -1,19 +1,16 @@
 Param(
-    [switch]$cleanUp,
-    [string]$file
+    [switch]$cleanUp
 )
-$apiDoctorVersion = $env:APIDOCTOR_VERSION
 $repoPath = (Get-Location).Path
 $downloadedApiDoctor = $false
 $downloadedNuGet = $false
 
 Write-Host "Repository location: ", $repoPath
 
-# Check if ApiDoctor version has been set
-if ([string]::IsNullOrWhiteSpace($apiDoctorVersion)) {
-	Write-Host "API Doctor version has not been set. Aborting..."
-	exit 1
-}
+if (-not (Test-Path env:APIDOCTOR_VERSION)) { $env:APIDOCTOR_VERSION = 'https://github.com/andrueastman/apidoctor' }
+
+$apiDoctorVersion = $env:APIDOCTOR_VERSION
+Write-Host "Using apidoctor version: ", $apiDoctorVersion
 
 # Get NuGet
 $nugetPath = $null
@@ -79,14 +76,25 @@ else {
 	$downloadedApiDoctor = $true
 }
 
+# Configure with defaults for snippet generation
+$git_path = (Get-Command "git.exe").Source
+if (-not (Test-Path env:SNIPPET_API_URL)) { $env:SNIPPET_API_URL = 'https://graphexplorerapi.azurewebsites.net/api/GraphExplorerSnippets' }
+if (-not (Test-Path env:LANGUAGES)) { $env:LANGUAGES = 'Javascript,C#' }
+if (-not (Test-Path env:GIT_REMOTE_URL)) { $env:GIT_REMOTE_URL = 'https://github.com/andrueastman/microsoft-graph-docs.git' }
+
+#we must have the access token
+if (-not (Test-Path env:GITHUB_TOKEN)) { 
+	Write-Host "Cannot run without Github access token" 
+	exit 1 
+}
+
 # Configure git appropiately
-git config --global user.name "ApiDoctor"
-git config --global user.email "ApiDoctor"
+git config user.name "ApiDoctor"
 git remote rm origin
 git remote add origin $env:GIT_REMOTE_URL
 
 # Run the snippet generator
-$params = "generate-snippets", "--path", $repoPath ,"--ignore-warnings","--git-path",$env:GIT_PATH,"--snippet-api-url" , $env:SNIPPET_API_URL ,"--lang", $env:LANGUAGES , "--github-token" , $env:GITHUB_TOKEN
+$params = "generate-snippets", "--path" , $repoPath , "--ignore-warnings" , "--git-path" , $git_path ,"--snippet-api-url" , $env:SNIPPET_API_URL ,"--lang", $env:LANGUAGES , "--github-token" , $env:GITHUB_TOKEN
 
 & $apidoc $params
 
