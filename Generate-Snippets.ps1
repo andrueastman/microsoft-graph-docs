@@ -90,9 +90,9 @@ if (-not (Test-Path env:GITHUB_TOKEN)) {
 
 # Configure git appropiately
 git config user.name "ApiDoctor"
+git config user.email "ApiDoctor"
 git remote rm origin
 git remote add origin $env:GIT_REMOTE_URL
-git config core.autocrlf true
 
 # Run the snippet generator
 $params = "generate-snippets", "--path" , $repoPath , "--ignore-warnings" , "--git-path" , $git_path ,"--snippet-api-url" , $env:SNIPPET_API_URL ,"--lang", $env:LANGUAGES , "--github-token" , $env:GITHUB_TOKEN
