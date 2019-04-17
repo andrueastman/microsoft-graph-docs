@@ -5,7 +5,9 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var versions = await graphClient.Me.Drive.Items["{item-id}"].Versions["{version-id}"]
 	.Request()
-	.Select("content")
+	.Select( e => new {
+			 e.content 
+			 })
 	.GetAsync();
 
 var content = versions.Content;

@@ -5,7 +5,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var user = await graphClient.Users
 	.Request()
-	.Select("displayName,givenName,postalCode")
+	.Select( e => new {
+			 e.displayName,
+			 e.givenName,
+			 e.postalCode 
+			 })
 	.GetAsync();
 
 ```

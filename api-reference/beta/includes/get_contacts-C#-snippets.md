@@ -5,7 +5,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var contact = await graphClient.Me.Contacts
 	.Request()
-	.Select("displayName,emailAddresses")
+	.Select( e => new {
+			 e.displayName,
+			 e.emailAddresses 
+			 })
 	.GetAsync();
 
 ```

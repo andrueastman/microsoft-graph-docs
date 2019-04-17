@@ -5,7 +5,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var messages = await graphClient.Me.Messages["AAMkADYAAAImV_jAAA="]
 	.Request()
-	.Expand("")
+	.Expand("eventMessage/event")
 	.GetAsync();
 
 ```

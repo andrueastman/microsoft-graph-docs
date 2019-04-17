@@ -6,7 +6,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var group = await graphClient.Groups.Delta()
 	.Request()
 	.Header("Prefer","return=minimal")
-	.Select("displayName,description,mailNickname")
+	.Select( e => new {
+			 e.displayName,
+			 e.description,
+			 e.mailNickname 
+			 })
 	.GetAsync();
 
 ```

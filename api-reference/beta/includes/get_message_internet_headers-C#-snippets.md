@@ -5,7 +5,9 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var messages = await graphClient.Me.Messages["AAMkAGVmMDEz"]
 	.Request()
-	.Select("internetMessageHeaders")
+	.Select( e => new {
+			 e.internetMessageHeaders 
+			 })
 	.GetAsync();
 
 ```
