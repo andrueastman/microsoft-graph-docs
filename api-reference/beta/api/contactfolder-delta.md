@@ -78,15 +78,27 @@ You can find a similar example that shows how to use the state tokens to track c
 between tracking contact folders and tracking messages in a folder are in the delta query request URLs, and the query responses 
 returning **contactFolder** rather than **message** collections.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contactfolder_delta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/contactFolders/delta
 
 Prefer: odata.maxpagesize=2
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contactfolder-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contactfolder-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 

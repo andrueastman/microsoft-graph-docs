@@ -42,6 +42,8 @@ If successful, this method returns `204 No Content` response code. It does not r
 ## Example
 #### Request
 The following are a couple of examples of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "remove_rejectedSender_from_group"
@@ -51,6 +53,16 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=htt
 
 DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/remove-rejectedsender-from-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/remove-rejectedsender-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 The following is an example of the response. 

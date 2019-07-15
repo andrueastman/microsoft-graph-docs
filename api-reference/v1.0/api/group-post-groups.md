@@ -74,6 +74,8 @@ If successful, this method returns `201 Created` response code and [group](../re
 ## Example
 #### Request 1
 The first example request creates an Office 365 Group.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_group"
@@ -94,6 +96,20 @@ Content-length: 244
   "securityEnabled": false
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response 1
 The following is an example of the response.
@@ -151,6 +167,8 @@ Read the [SDK documentation](https://docs.microsoft.com/en-us/graph/sdks/sdks-o
 
 #### Request 2
 The second example request creates an Office 365 group with an owner and members specified.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_prepopulated_group"
@@ -177,6 +195,20 @@ Content-Type: application/json
   ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-prepopulated-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-prepopulated-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-prepopulated-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response 2
 The following is an example of a successful response. It includes only default properties. You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members. 

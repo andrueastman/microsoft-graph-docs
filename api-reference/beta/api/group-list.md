@@ -64,13 +64,29 @@ If successful, this method returns a `200 OK` response code and collection of [g
 ## Example
 #### Request 1
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_groups"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-groups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response 1
 The following is an example of the response.
@@ -172,13 +188,29 @@ Read the [SDK documentation](https://docs.microsoft.com/en-us/graph/sdks/sdks-o
 
 #### Request 2
 This example uses a `$filter` query option to get those groups that have members with license errors from their group-based license assignments. It also uses a `$select` query option to get only the **id** and **displayName** properties of each group in the response, and not other default or non-default properties.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_groups_withlicenseerrors"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-withlicenseerrors-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-withlicenseerrors-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-groups-withlicenseerrors-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response 2
 The following is an example of the response which includes only the requested properties.

@@ -24,9 +24,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "samples" } --> 
 
-```http
+```msgraph-interactive
 GET /reports/getSharePointActivityUserDetail(period='{period_value}')
 GET /reports/getSharePointActivityUserDetail(date={date_value})
 ```
@@ -82,9 +84,23 @@ The following is an example of the request.
   "name": "reportroot_getsharepointactivityuserdetail"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getSharePointActivityUserDetail(period='D7')
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getsharepointactivityuserdetail-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getsharepointactivityuserdetail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getsharepointactivityuserdetail-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 

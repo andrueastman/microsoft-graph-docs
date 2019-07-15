@@ -67,13 +67,29 @@ If successful, this method returns a `200 OK` response code and collection of [M
 ## Example
 ##### Request
 This example gets the default, top 10 messages in the signed-in user's mailbox. It uses `$select` to return a subset of the properties of each message in the response.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_messages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-messages-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-messages-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-messages-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 Here is an example of the response. To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.
 

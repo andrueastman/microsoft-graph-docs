@@ -46,6 +46,8 @@ If successful, returns a `204 No Content` response code. It does not return anyt
 The following is an example of a request.
 
 >**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationschema"
@@ -95,6 +97,16 @@ PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 }
 
 ```
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationschema-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-synchronizationschema-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 The following is an example of a response.
