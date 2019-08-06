@@ -52,6 +52,8 @@ Here is an example that shows how to call this API.
 
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -102,6 +104,8 @@ Alternatively, this function can be called with the optional `valuesOnly` parame
 
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,

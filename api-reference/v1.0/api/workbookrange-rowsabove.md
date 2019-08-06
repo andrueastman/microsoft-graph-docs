@@ -50,6 +50,8 @@ If successful, this method returns `200 OK` response code and [workbookRange](..
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -104,6 +106,8 @@ Content-length: 157
 If called without the optional `count` parameter, this function returns the single row above the range.
 
 ##### Request
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
