@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
@@ -82,7 +81,6 @@ POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/ran
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "response",
   "truncated": true,

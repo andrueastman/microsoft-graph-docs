@@ -29,7 +29,6 @@ None
 Here is a JSON representation of the resource.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",
