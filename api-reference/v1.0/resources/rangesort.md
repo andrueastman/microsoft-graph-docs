@@ -29,7 +29,6 @@ None
 Here is a JSON representation of the resource.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",
@@ -47,6 +46,8 @@ Here is a JSON representation of the resource.
 ##### Request
 Here is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "name": "range_sort"
