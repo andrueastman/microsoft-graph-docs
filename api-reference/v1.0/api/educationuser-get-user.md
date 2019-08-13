@@ -44,7 +44,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_user"
+  "name": "get_educationuser"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/education/me/user
