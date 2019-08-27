@@ -10,7 +10,7 @@ var outlookTask = new OutlookTask
 {
 	DueDateTime = new DateTimeTimeZone
 	{
-		DateTime = "2016-05-06T16:00:00",
+		DateTime = "05/06/2016 16:00:00",
 		TimeZone = "Eastern Standard Time"
 	}
 };

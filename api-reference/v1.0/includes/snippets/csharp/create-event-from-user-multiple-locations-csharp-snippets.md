@@ -16,12 +16,12 @@ var @event = new Event
 	},
 	Start = new DateTimeTimeZone
 	{
-		DateTime = "2017-08-30T11:00:00",
+		DateTime = "08/30/2017 11:00:00",
 		TimeZone = "Pacific Standard Time"
 	},
 	End = new DateTimeTimeZone
 	{
-		DateTime = "2017-08-30T12:00:00",
+		DateTime = "08/30/2017 12:00:00",
 		TimeZone = "Pacific Standard Time"
 	},
 	Attendees = new List<Attendee>()

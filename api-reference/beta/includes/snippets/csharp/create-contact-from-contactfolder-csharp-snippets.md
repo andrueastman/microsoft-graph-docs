@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var contact = new Contact
 {
 	ParentFolderId = "parentFolderId-value",
-	Birthday = "2016-10-19T10:37:00Z",
+	Birthday = DateTimeOffset.Parse("10/19/2016 10:37:00"),
 	FileAs = "fileAs-value",
 	DisplayName = "displayName-value",
 	GivenName = "givenName-value",

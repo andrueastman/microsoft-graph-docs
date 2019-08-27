@@ -13,9 +13,9 @@ var @event = new Event
 	ResponseStatus = new ResponseStatus
 	{
 		Response = ResponseType.None,
-		Time = "datetime-value"
+		Time = DateTimeOffset.Parse("datetime-value")
 	},
-	Recurrence = null,
+	Recurrence = ,
 	ICalUId = "iCalUId-value",
 	ReminderMinutesBeforeStart = 99,
 	IsReminderOn = true

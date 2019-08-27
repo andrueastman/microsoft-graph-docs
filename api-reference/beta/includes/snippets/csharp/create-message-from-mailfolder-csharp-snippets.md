@@ -8,8 +8,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var message = new Message
 {
-	ReceivedDateTime = "2016-10-19T10:37:00Z",
-	SentDateTime = "2016-10-19T10:37:00Z",
+	ReceivedDateTime = DateTimeOffset.Parse("10/19/2016 10:37:00"),
+	SentDateTime = DateTimeOffset.Parse("10/19/2016 10:37:00"),
 	HasAttachments = true,
 	Subject = "subject-value",
 	Body = new ItemBody

@@ -13,7 +13,7 @@ var Stream = new List<Stream>()
 		Target = "#para-id",
 		Action = "insert",
 		Position = "before",
-		Content = "<img src=\"image-url-or-part-name\" alt=\"image-alt-text\" />"
+		Content = "<img src="image-url-or-part-name" alt="image-alt-text" />"
 	},
 	new Stream
 	{

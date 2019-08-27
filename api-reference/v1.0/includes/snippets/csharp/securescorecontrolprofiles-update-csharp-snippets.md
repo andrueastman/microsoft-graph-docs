@@ -14,8 +14,8 @@ var secureScoreControlProfile = new SecureScoreControlProfile
 	VendorInformation = new SecurityVendorInformation
 	{
 		Provider = "SecureScore",
-		ProviderVersion = null,
-		SubProvider = null,
+		ProviderVersion = ,
+		SubProvider = ,
 		Vendor = "Microsoft"
 	}
 };

@@ -9,15 +9,15 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var shift = new Shift
 {
 	Id = "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
-	CreatedDateTime = "2019-03-14T04:32:51.451Z",
-	LastModifiedDateTime = "2019-03-14T05:32:51.451Z",
+	CreatedDateTime = DateTimeOffset.Parse("03/14/2019 04:32:51"),
+	LastModifiedDateTime = DateTimeOffset.Parse("03/14/2019 05:32:51"),
 	UserId = "c5d0c76b-80c4-481c-be50-923cd8d680a1",
 	SchedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
 	LastModifiedBy = new IdentitySet
 	{
-		Application = null,
-		Device = null,
-		Conversation = null,
+		Application = ,
+		Device = ,
+		Conversation = ,
 		User = new Identity
 		{
 			Id = "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
@@ -28,16 +28,16 @@ var shift = new Shift
 	{
 		DisplayName = "Day shift",
 		Notes = "Please do inventory as part of your shift.",
-		StartDateTime = "2019-03-11T15:00:00Z",
-		EndDateTime = "2019-03-12T00:00:00Z",
+		StartDateTime = DateTimeOffset.Parse("03/11/2019 15:00:00"),
+		EndDateTime = DateTimeOffset.Parse("03/12/2019 00:00:00"),
 		Theme = ScheduleEntityTheme.Blue,
 		Activities = new List<ShiftActivity>()
 		{
 			new ShiftActivity
 			{
 				IsPaid = true,
-				StartDateTime = "2019-03-11T15:00:00Z",
-				EndDateTime = "2019-03-11T15:15:00Z",
+				StartDateTime = DateTimeOffset.Parse("03/11/2019 15:00:00"),
+				EndDateTime = DateTimeOffset.Parse("03/11/2019 15:15:00"),
 				Code = "",
 				DisplayName = "Lunch"
 			}
@@ -47,16 +47,16 @@ var shift = new Shift
 	{
 		DisplayName = "Day shift",
 		Notes = "Please do inventory as part of your shift.",
-		StartDateTime = "2019-03-11T15:00:00Z",
-		EndDateTime = "2019-03-12T00:00:00Z",
+		StartDateTime = DateTimeOffset.Parse("03/11/2019 15:00:00"),
+		EndDateTime = DateTimeOffset.Parse("03/12/2019 00:00:00"),
 		Theme = ScheduleEntityTheme.Blue,
 		Activities = new List<ShiftActivity>()
 		{
 			new ShiftActivity
 			{
 				IsPaid = true,
-				StartDateTime = "2019-03-11T15:00:00Z",
-				EndDateTime = "2019-03-11T15:30:00Z",
+				StartDateTime = DateTimeOffset.Parse("03/11/2019 15:00:00"),
+				EndDateTime = DateTimeOffset.Parse("03/11/2019 15:30:00"),
 				Code = "",
 				DisplayName = "Lunch"
 			}

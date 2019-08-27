@@ -12,15 +12,15 @@ var timeOff = new TimeOff
 	SharedTimeOff = new TimeOffItem
 	{
 		TimeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-		StartDateTime = "2019-03-11T07:00:00Z",
-		EndDateTime = "2019-03-12T07:00:00Z",
+		StartDateTime = DateTimeOffset.Parse("03/11/2019 07:00:00"),
+		EndDateTime = DateTimeOffset.Parse("03/12/2019 07:00:00"),
 		Theme = ScheduleEntityTheme.White
 	},
 	DraftTimeOff = new TimeOffItem
 	{
 		TimeOffReasonId = "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-		StartDateTime = "2019-03-11T07:00:00Z",
-		EndDateTime = "2019-03-12T07:00:00Z",
+		StartDateTime = DateTimeOffset.Parse("03/11/2019 07:00:00"),
+		EndDateTime = DateTimeOffset.Parse("03/12/2019 07:00:00"),
 		Theme = ScheduleEntityTheme.Pink
 	}
 };

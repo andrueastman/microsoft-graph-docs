@@ -16,12 +16,12 @@ var @event = new Event
 	},
 	Start = new DateTimeTimeZone
 	{
-		DateTime = "2019-06-16T12:00:00",
+		DateTime = "06/16/2019 12:00:00",
 		TimeZone = "Pacific Standard Time"
 	},
 	End = new DateTimeTimeZone
 	{
-		DateTime = "2019-06-16T14:00:00",
+		DateTime = "06/16/2019 14:00:00",
 		TimeZone = "Pacific Standard Time"
 	},
 	Location = new Location

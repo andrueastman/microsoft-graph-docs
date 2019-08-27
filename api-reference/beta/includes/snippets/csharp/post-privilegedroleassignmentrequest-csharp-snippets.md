@@ -14,7 +14,7 @@ var privilegedRoleAssignmentRequest = new PrivilegedRoleAssignmentRequest
 	TicketSystem = "system",
 	Schedule = new GovernanceSchedule
 	{
-		StartDateTime = "2018-02-08T02:35:17.903Z"
+		StartDateTime = DateTimeOffset.Parse("02/08/2018 02:35:17")
 	},
 	EvaluateOnly = false,
 	Type = "UserAdd",

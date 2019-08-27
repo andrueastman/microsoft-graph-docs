@@ -12,7 +12,7 @@ var targetAttributeDefinition = ;
 
 var testInputObject = new ExpressionInputObject
 {
-	Definition = null,
+	Definition = ,
 	Properties = new List<StringKeyObjectValuePair>()
 	{
 		new StringKeyObjectValuePair
@@ -23,12 +23,12 @@ var testInputObject = new ExpressionInputObject
 		new StringKeyObjectValuePair
 		{
 			Key = "IsSoftDeleted",
-			Value = "false"
+			Value = false
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "accountEnabled",
-			Value = "true"
+			Value = true
 		},
 		new StringKeyObjectValuePair
 		{

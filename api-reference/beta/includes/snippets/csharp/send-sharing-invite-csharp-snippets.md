@@ -27,7 +27,7 @@ var roles = new List<String>()
 
 var password = "password123";
 
-var expirationDateTime = 7/15/2018 2:00:00 PM;
+var expirationDateTime = "07/15/2018 14:00:00";
 
 await graphClient.Me.Drive.Items["{item-id}"]
 	.Invite(requireSignIn,roles,sendInvitation,message,recipients,expirationDateTime,password)

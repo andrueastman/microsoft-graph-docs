@@ -32,7 +32,7 @@ var conversation = new Conversation
 							},
 							ExtensionName = "Com.Contoso.Benefits",
 							CompanyName = "Contoso",
-							ExpirationDate = "2016-08-03T11:00:00Z",
+							ExpirationDate = "08/03/2016 11:00:00",
 							TopPicks = new List<String>()
 							{
 								"Employees only",

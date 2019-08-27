@@ -34,20 +34,20 @@ var bookingService = new BookingService
 			City = "Buffalo",
 			CountryOrRegion = "USA",
 			PostalCode = "98052",
-			PostOfficeBox = null,
+			PostOfficeBox = ,
 			State = "NY",
 			Street = "4567 First Street",
-			Type = null
+			Type = 
 		},
-		Coordinates = null,
+		Coordinates = ,
 		DisplayName = "Contoso Lunch Delivery",
-		LocationEmailAddress = null,
-		LocationType = null,
-		LocationUri = null,
-		UniqueId = null,
-		UniqueIdType = null
+		LocationEmailAddress = ,
+		LocationType = ,
+		LocationUri = ,
+		UniqueId = ,
+		UniqueIdType = 
 	},
-	DefaultPrice = 10.0,
+	DefaultPrice = 10,
 	DefaultPriceType = BookingPriceType.FixedPrice,
 	DefaultReminders = new List<BookingReminder>()
 	{

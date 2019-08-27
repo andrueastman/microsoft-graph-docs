@@ -34,18 +34,18 @@ var bookingAppointment = new BookingAppointment
 			City = "Buffalo",
 			CountryOrRegion = "USA",
 			PostalCode = "98052",
-			PostOfficeBox = null,
+			PostOfficeBox = ,
 			State = "NY",
 			Street = "123 First Avenue",
-			Type = null
+			Type = 
 		},
-		Coordinates = null,
+		Coordinates = ,
 		DisplayName = "Customer",
-		LocationEmailAddress = null,
-		LocationType = null,
-		LocationUri = null,
-		UniqueId = null,
-		UniqueIdType = null
+		LocationEmailAddress = ,
+		LocationType = ,
+		LocationUri = ,
+		UniqueId = ,
+		UniqueIdType = 
 	},
 	CustomerName = "Jordan Miller",
 	CustomerNotes = "Please be on time.",
@@ -56,17 +56,17 @@ var bookingAppointment = new BookingAppointment
 		{
 			{"@odata.type","#microsoft.graph.dateTimeTimeZone"}
 		},
-		DateTime = "2018-05-01T12:30:00+00:00",
+		DateTime = "05/01/2018 12:30:00",
 		TimeZone = "UTC"
 	},
-	InvoiceAmount = 10.0,
+	InvoiceAmount = 10,
 	InvoiceDate = new DateTimeTimeZone
 	{
 		AdditionalData = new Dictionary<string, object>()
 		{
 			{"@odata.type","#microsoft.graph.dateTimeTimeZone"}
 		},
-		DateTime = "2018-05-01T12:30:00+00:00",
+		DateTime = "05/01/2018 12:30:00",
 		TimeZone = "UTC"
 	},
 	InvoiceId = "1001",
@@ -75,7 +75,7 @@ var bookingAppointment = new BookingAppointment
 	OptOutOfCustomerEmail = false,
 	PostBuffer = "PT10M",
 	PreBuffer = "PT5M",
-	Price = 10.0,
+	Price = 10,
 	PriceType = BookingPriceType.FixedPrice,
 	Reminders = new List<BookingReminder>()
 	{
@@ -132,18 +132,18 @@ var bookingAppointment = new BookingAppointment
 			City = "Buffalo",
 			CountryOrRegion = "USA",
 			PostalCode = "98052",
-			PostOfficeBox = null,
+			PostOfficeBox = ,
 			State = "NY",
 			Street = "123 First Avenue",
-			Type = null
+			Type = 
 		},
-		Coordinates = null,
+		Coordinates = ,
 		DisplayName = "Customer location",
-		LocationEmailAddress = null,
-		LocationType = null,
-		LocationUri = null,
-		UniqueId = null,
-		UniqueIdType = null
+		LocationEmailAddress = ,
+		LocationType = ,
+		LocationUri = ,
+		UniqueId = ,
+		UniqueIdType = 
 	},
 	ServiceName = "Catered bento",
 	ServiceNotes = "Customer requires punctual service.",
@@ -153,7 +153,7 @@ var bookingAppointment = new BookingAppointment
 		{
 			{"@odata.type","#microsoft.graph.dateTimeTimeZone"}
 		},
-		DateTime = "2018-05-01T12:00:00+00:00",
+		DateTime = "05/01/2018 12:00:00",
 		TimeZone = "UTC"
 	}
 };

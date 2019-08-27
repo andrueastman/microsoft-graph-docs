@@ -13,7 +13,7 @@ var governanceRoleSetting = new GovernanceRoleSetting
 		new GovernanceRuleSetting
 		{
 			RuleIdentifier = "ExpirationRule",
-			Setting = "{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}"
+			Setting = "{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}"
 		}
 	}
 };

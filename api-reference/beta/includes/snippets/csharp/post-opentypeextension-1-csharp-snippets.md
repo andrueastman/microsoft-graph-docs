@@ -34,7 +34,7 @@ var message = new Message
 			},
 			ExtensionName = "Com.Contoso.Referral",
 			CompanyName = "Wingtip Toys",
-			ExpirationDate = "2015-12-30T11:00:00Z",
+			ExpirationDate = "12/30/2015 11:00:00",
 			DealValue = 10000
 		}
 	}

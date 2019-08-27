@@ -16,7 +16,7 @@ var plannerPlanDetails = new PlannerPlanDetails
 	CategoryDescriptions = new PlannerCategoryDescriptions
 	{
 		Category1 = "Indoors",
-		Category3 = null
+		Category3 = 
 	}
 };
 

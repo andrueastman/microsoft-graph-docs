@@ -10,7 +10,7 @@ var educationUser = new EducationUser
 {
 	DisplayName = "Dion Matheson",
 	GivenName = "Dion",
-	MiddleName = null,
+	MiddleName = ,
 	Surname = "Matheson",
 	Mail = "DionM@contoso.com",
 	MobilePhone = "+1 (253) 555-0101",

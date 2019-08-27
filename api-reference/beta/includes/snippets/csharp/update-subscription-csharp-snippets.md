@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var subscription = new Subscription
 {
-	ExpirationDateTime = "2016-11-22T18:23:45.9356913Z"
+	ExpirationDateTime = DateTimeOffset.Parse("11/22/2016 18:23:45")
 };
 
 await graphClient.Subscriptions["{id}"]

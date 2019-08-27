@@ -15,16 +15,16 @@ var shift = new Shift
 	{
 		DisplayName = "Day shift",
 		Notes = "Please do inventory as part of your shift.",
-		StartDateTime = "2019-03-11T15:00:00Z",
-		EndDateTime = "2019-03-12T00:00:00Z",
+		StartDateTime = DateTimeOffset.Parse("03/11/2019 15:00:00"),
+		EndDateTime = DateTimeOffset.Parse("03/12/2019 00:00:00"),
 		Theme = ScheduleEntityTheme.Blue,
 		Activities = new List<ShiftActivity>()
 		{
 			new ShiftActivity
 			{
 				IsPaid = true,
-				StartDateTime = "2019-03-11T15:00:00Z",
-				EndDateTime = "2019-03-11T15:15:00Z",
+				StartDateTime = DateTimeOffset.Parse("03/11/2019 15:00:00"),
+				EndDateTime = DateTimeOffset.Parse("03/11/2019 15:15:00"),
 				Code = "",
 				DisplayName = "Lunch"
 			}
@@ -34,16 +34,16 @@ var shift = new Shift
 	{
 		DisplayName = "Day shift",
 		Notes = "Please do inventory as part of your shift.",
-		StartDateTime = "2019-03-11T15:00:00Z",
-		EndDateTime = "2019-03-12T00:00:00Z",
+		StartDateTime = DateTimeOffset.Parse("03/11/2019 15:00:00"),
+		EndDateTime = DateTimeOffset.Parse("03/12/2019 00:00:00"),
 		Theme = ScheduleEntityTheme.Blue,
 		Activities = new List<ShiftActivity>()
 		{
 			new ShiftActivity
 			{
 				IsPaid = true,
-				StartDateTime = "2019-03-11T15:00:00Z",
-				EndDateTime = "2019-03-11T15:30:00Z",
+				StartDateTime = DateTimeOffset.Parse("03/11/2019 15:00:00"),
+				EndDateTime = DateTimeOffset.Parse("03/11/2019 15:30:00"),
 				Code = "",
 				DisplayName = "Lunch"
 			}

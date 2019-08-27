@@ -21,13 +21,13 @@ var attendees = new List<AttendeeBase>()
 
 var locationConstraint = new LocationConstraint
 {
-	IsRequired = "false",
-	SuggestLocation = "false",
+	IsRequired = false,
+	SuggestLocation = false,
 	Locations = new List<LocationConstraintItem>()
 	{
 		new LocationConstraintItem
 		{
-			ResolveAvailability = "false",
+			ResolveAvailability = false,
 			DisplayName = "Conf room Hood"
 		}
 	}
@@ -42,12 +42,12 @@ var timeConstraint = new TimeConstraint
 		{
 			Start = new DateTimeTimeZone
 			{
-				DateTime = "2019-04-16T09:00:00",
+				DateTime = "04/16/2019 09:00:00",
 				TimeZone = "Pacific Standard Time"
 			},
 			End = new DateTimeTimeZone
 			{
-				DateTime = "2019-04-18T17:00:00",
+				DateTime = "04/18/2019 17:00:00",
 				TimeZone = "Pacific Standard Time"
 			}
 		}

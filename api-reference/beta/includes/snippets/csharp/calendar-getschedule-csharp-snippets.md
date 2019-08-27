@@ -14,13 +14,13 @@ var schedules = new List<String>()
 
 var startTime = new DateTimeTimeZone
 {
-	DateTime = "2019-03-15T09:00:00",
+	DateTime = "03/15/2019 09:00:00",
 	TimeZone = "Pacific Standard Time"
 };
 
 var endTime = new DateTimeTimeZone
 {
-	DateTime = "2019-03-15T18:00:00",
+	DateTime = "03/15/2019 18:00:00",
 	TimeZone = "Pacific Standard Time"
 };
 

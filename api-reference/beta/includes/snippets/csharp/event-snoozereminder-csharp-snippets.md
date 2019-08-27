@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var newReminderTime = new DateTimeTimeZone
 {
-	DateTime = "2016-10-19T10:37:00Z",
+	DateTime = "10/19/2016 10:37:00",
 	TimeZone = "timeZone-value"
 };
 

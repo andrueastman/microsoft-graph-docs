@@ -16,12 +16,12 @@ var @event = new Event
 	},
 	Start = new DateTimeTimeZone
 	{
-		DateTime = "2017-09-04T12:00:00",
+		DateTime = "09/04/2017 12:00:00",
 		TimeZone = "Pacific Standard Time"
 	},
 	End = new DateTimeTimeZone
 	{
-		DateTime = "2017-09-04T14:00:00",
+		DateTime = "09/04/2017 14:00:00",
 		TimeZone = "Pacific Standard Time"
 	},
 	Recurrence = new PatternedRecurrence

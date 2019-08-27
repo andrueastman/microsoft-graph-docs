@@ -14,7 +14,7 @@ var extension = new Extension
 	},
 	ExtensionName = "Com.Contoso.Estimate",
 	CompanyName = "Contoso",
-	ExpirationDate = "2016-07-30T11:00:00Z",
+	ExpirationDate = "07/30/2016 11:00:00",
 	DealValue = 1010100,
 	TopPicks = new List<String>()
 	{

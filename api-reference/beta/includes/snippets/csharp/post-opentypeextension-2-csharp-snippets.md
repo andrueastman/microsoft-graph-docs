@@ -15,7 +15,7 @@ var extension = new Extension
 	ExtensionName = "Com.Contoso.Referral",
 	CompanyName = "Wingtip Toys",
 	DealValue = 500050,
-	ExpirationDate = "2015-12-03T10:00:00Z"
+	ExpirationDate = "12/03/2015 10:00:00"
 };
 
 await graphClient.Me.Messages["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="].Extensions

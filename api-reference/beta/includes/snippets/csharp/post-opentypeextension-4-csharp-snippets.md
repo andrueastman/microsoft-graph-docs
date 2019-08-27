@@ -23,7 +23,7 @@ var post = new Post
 			},
 			ExtensionName = "Com.Contoso.HR",
 			CompanyName = "Contoso",
-			ExpirationDate = "2015-07-03T13:04:00Z",
+			ExpirationDate = "07/03/2015 13:04:00",
 			TopPicks = new List<String>()
 			{
 				"Employees only",

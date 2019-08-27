@@ -17,12 +17,12 @@ var mailboxSettings = new MailboxSettings
 		Status = AutomaticRepliesStatus.Scheduled,
 		ScheduledStartDateTime = new DateTimeTimeZone
 		{
-			DateTime = "2016-03-20T18:00:00",
+			DateTime = "03/20/2016 18:00:00",
 			TimeZone = "UTC"
 		},
 		ScheduledEndDateTime = new DateTimeTimeZone
 		{
-			DateTime = "2016-03-28T18:00:00",
+			DateTime = "03/28/2016 18:00:00",
 			TimeZone = "UTC"
 		}
 	}
