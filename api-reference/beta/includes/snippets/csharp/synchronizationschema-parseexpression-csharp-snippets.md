@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var expression = "Replace([preferredLanguage], "-", , , "_", ,  )";
+var expression = "Replace([preferredLanguage], \"-\", , , \"_\", ,  )";
 
-var targetAttributeDefinition = ;
+var targetAttributeDefinition = null;
 
 var testInputObject = new ExpressionInputObject
 {
@@ -23,12 +23,12 @@ var testInputObject = new ExpressionInputObject
 		new StringKeyObjectValuePair
 		{
 			Key = "IsSoftDeleted",
-			Value = "false"
+			Value = false
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "accountEnabled",
-			Value = "true"
+			Value = true
 		},
 		new StringKeyObjectValuePair
 		{
