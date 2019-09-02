@@ -30,7 +30,7 @@ var password = "password123";
 var expirationDateTime = 7/15/2018 2:00:00 PM;
 
 await graphClient.Me.Drive.Items["{item-id}"]
-	.Invite(requireSignIn,roles,sendInvitation,message,recipients,expirationDateTime,password)
+	.Invite(recipients,requireSignIn,roles,sendInvitation,message,expirationDateTime,password)
 	.Request()
 	.PostAsync();
 
