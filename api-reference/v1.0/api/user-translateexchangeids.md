@@ -73,6 +73,8 @@ The following example shows how to convert multiple identifiers from the normal 
 
 Here is the example request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_translateexchangeids"
@@ -91,6 +93,12 @@ Content-Type: application/json
   "targetIdType": "restImmutableEntryId"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-translateexchangeids-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
