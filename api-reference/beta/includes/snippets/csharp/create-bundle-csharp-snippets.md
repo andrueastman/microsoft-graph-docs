@@ -9,10 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var driveItem = new DriveItem
 {
 	Name = "Just some files",
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@name.conflictBehavior","rename"}
-	},
+	@name.conflictBehavior = "rename",
 	Bundle = new Bundle
 	{
 	},
