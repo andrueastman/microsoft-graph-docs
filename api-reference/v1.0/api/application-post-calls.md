@@ -99,6 +99,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-call-service-hosted-media-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -318,6 +322,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-call-app-hosted-media-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-call-app-hosted-media-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 `<Media Session Configuration>` is the serialized media session configuration which contains the session information of the media stack. Specific information about audio, video, VBSS ssession information should be passed here.
@@ -412,7 +420,7 @@ POST https://graph.microsoft.com/v1.0/communications/calls
 Content-Type: application/json
 ```
 <!-- {
-  "blockType": "request",
+  "blockType": "example",
   "name": "create-group-call-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
@@ -479,7 +487,7 @@ POST https://graph.microsoft.com/v1.0/communications/calls
 Content-Type: application/json
 ```
 <!-- {
-  "blockType": "request",
+  "blockType": "example",
   "name": "create-group-call-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
@@ -546,7 +554,7 @@ The values of authorization token, callback url, application id, application nam
 ##### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "join-scheduled-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
@@ -873,7 +881,7 @@ Content-Type: application/json
 To join the meeting with application hosted media update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below, In the sample provided above.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "join-scheduled-meeting-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
