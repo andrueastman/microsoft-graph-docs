@@ -479,7 +479,7 @@ POST https://graph.microsoft.com/v1.0/communications/calls
 Content-Type: application/json
 ```
 <!-- {
-  "blockType": "request",
+  "blockType": "example",
   "name": "create-group-call-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
