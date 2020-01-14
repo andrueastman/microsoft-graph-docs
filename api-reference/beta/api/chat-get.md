@@ -65,7 +65,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chat_message"
+  "name": "get_chat"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/chats/{id}
