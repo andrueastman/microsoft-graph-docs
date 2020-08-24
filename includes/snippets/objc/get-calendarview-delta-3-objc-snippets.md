@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/calendarView/delta?$skiptoken=R0usmci39OQxqJrxK4"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/calendarView/delta?$skiptoken=R0usmci39OQxqJrxK4%20HTTP/1.1"]]];
 [urlRequest setHTTPMethod:@"GET"];
 [urlRequest setValue:@"odata.maxpagesize=2" forHTTPHeaderField:@"Prefer"];
 

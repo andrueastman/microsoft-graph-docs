@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var queryOptions = new List<QueryOption>()
 {
-	new QueryOption("$skiptoken", "R0usmcCM996atia_s")
+	new QueryOption("$skiptoken", "R0usmcCM996atia_s HTTP/1.1")
 };
 
 var delta = await graphClient.Me.CalendarView

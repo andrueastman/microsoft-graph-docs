@@ -9,7 +9,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("Prefer", "odata.maxpagesize=2"));
 requestOptions.add(new QueryOption("startdatetime", "2016-12-01T00:00:00Z"));
-requestOptions.add(new QueryOption("enddatetime", "2016-12-30T00:00:00Z"));
+requestOptions.add(new QueryOption("enddatetime", "2016-12-30T00:00:00Z HTTP/1.1"));
 
 IEventDeltaCollectionPage delta = graphClient.me().calendarView()
 	.delta()

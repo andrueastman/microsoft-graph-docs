@@ -8,7 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("Prefer", "odata.maxpagesize=2"));
-requestOptions.add(new QueryOption("$skiptoken", "R0usmcCM996atia_s"));
+requestOptions.add(new QueryOption("$skiptoken", "R0usmcCM996atia_s HTTP/1.1"));
 
 IEventDeltaCollectionPage delta = graphClient.me().calendarView()
 	.delta()

@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var queryOptions = new List<QueryOption>()
 {
 	new QueryOption("startdatetime", "2016-12-01T00:00:00Z"),
-	new QueryOption("enddatetime", "2016-12-30T00:00:00Z")
+	new QueryOption("enddatetime", "2016-12-30T00:00:00Z HTTP/1.1")
 };
 
 var delta = await graphClient.Me.CalendarView
