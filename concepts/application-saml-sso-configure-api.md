@@ -655,6 +655,8 @@ Make sure that the keyId for the keyCredential used for "Sign" matches the keyId
 > [!NOTE]
 > The "key" value in the keyCredentials property is shortened for readability. The value is base 64 encoded. For the private key the property `usage` is "Sign". For the public key the property `usage` is "Verify".
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -699,6 +701,12 @@ Content-type: servicePrincipals/json
     ]
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
