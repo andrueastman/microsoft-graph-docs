@@ -1,0 +1,23 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```java
+
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+
+ConnectedOrganization connectedOrganization = new ConnectedOrganization();
+connectedOrganization.displayName = "Connected organization name";
+connectedOrganization.description = "Connected organization description";
+LinkedList<IdentitySource> identitySourcesList = new LinkedList<IdentitySource>();
+DomainIdentitySource identitySources = new DomainIdentitySource();
+identitySources.domainName = "example.com";
+identitySources.displayName = "example.com";
+identitySourcesList.add(identitySources);
+connectedOrganization.identitySources = identitySourcesList;
+
+graphClient.identityGovernance().entitlementManagement().connectedOrganizations()
+	.buildRequest()
+	.post(connectedOrganization);
+
+```

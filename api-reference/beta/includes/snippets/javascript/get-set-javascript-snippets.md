@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/termStore/sets/{setId}')
+let set = await client.api('/termStore/sets/{setId}')
 	.version('beta')
 	.get();
 

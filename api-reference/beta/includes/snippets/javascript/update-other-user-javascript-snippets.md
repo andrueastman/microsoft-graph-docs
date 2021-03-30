@@ -12,12 +12,12 @@ const client = Client.init(options);
 
 const user = {
   businessPhones: [
-    "businessPhones-value"
+    'businessPhones-value'
   ],
-  officeLocation: "city-value"
+  officeLocation: 'city-value'
 };
 
-let res = await client.api('/users/{id}')
+await client.api('/users/{id}')
 	.version('beta')
 	.update(user);
 

@@ -9,8 +9,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var users = await graphClient.Users
 	.Request()
 	.Header("ConsistencyLevel","eventual")
-	.Filter("startswith(displayName,'a'),")
-	.OrderBy("displayName ")
+	.Filter("startswith(displayName,'a')")
+	.OrderBy("displayName")
 	.Top(1)
 	.GetAsync();
 

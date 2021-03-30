@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/{id}/memberOf/$count')
+let int32 = await client.api('/users/{id}/memberOf/$count')
 	.version('beta')
 	.header('ConsistencyLevel','eventual')
 	.get();

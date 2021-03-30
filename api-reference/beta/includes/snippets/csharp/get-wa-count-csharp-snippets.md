@@ -10,7 +10,7 @@ var users = await graphClient.Users
 	.Request()
 	.Header("ConsistencyLevel","eventual")
 	.Search("displayName:wa")
-	.OrderBy("displayName ")
+	.OrderBy("displayName")
 	.GetAsync();
 
 ```

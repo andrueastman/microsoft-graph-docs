@@ -11,7 +11,7 @@ var group = await graphClient.Users["{id}"].TransitiveMemberOf
 	.Header("ConsistencyLevel","eventual")
 	.Search("displayName:tier")
 	.Select("displayName,id")
-	.OrderBy("displayName ")
+	.OrderBy("displayName")
 	.GetAsync();
 
 ```

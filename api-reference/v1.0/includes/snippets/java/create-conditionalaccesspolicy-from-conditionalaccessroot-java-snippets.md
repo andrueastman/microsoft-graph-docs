@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ConditionalAccessPolicy conditionalAccessPolicy = new ConditionalAccessPolicy();
 conditionalAccessPolicy.displayName = "Require MFA to EXO from non-compliant devices.";
@@ -23,8 +23,8 @@ conditions.users = users;
 conditionalAccessPolicy.conditions = conditions;
 ConditionalAccessGrantControls grantControls = new ConditionalAccessGrantControls();
 grantControls.operator = "OR";
-LinkedList<String> builtInControlsList = new LinkedList<String>();
-builtInControlsList.add("mfa");
+LinkedList<ConditionalAccessGrantControl> builtInControlsList = new LinkedList<ConditionalAccessGrantControl>();
+builtInControlsList.add(ConditionalAccessGrantControl.MFA);
 grantControls.builtInControls = builtInControlsList;
 conditionalAccessPolicy.grantControls = grantControls;
 

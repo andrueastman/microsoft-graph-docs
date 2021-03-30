@@ -12,14 +12,14 @@ const client = Client.init(options);
 
 const claimsMappingPolicy = {
   definition: [
-    "definition-value"
+    'definition-value'
   ],
-  displayName: "displayName-value",
+  displayName: 'displayName-value',
   isOrganizationDefault: true,
-  type: "type-value"
+  type: 'type-value'
 };
 
-let res = await client.api('/policies/claimsMappingPolicies/{id}')
+await client.api('/policies/claimsMappingPolicies/{id}')
 	.version('beta')
 	.update(claimsMappingPolicy);
 

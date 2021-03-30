@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const application = {
-  displayName: "Contoso IWA App",
-  signInAudience:"AzureADMyOrg"
+  displayName: 'Contoso IWA App',
+  signInAudience: 'AzureADMyOrg'
 };
 
-let res = await client.api('/applications')
+await client.api('/applications')
 	.version('beta')
 	.post(application);
 

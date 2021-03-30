@@ -11,27 +11,27 @@ const options = {
 const client = Client.init(options);
 
 const externalItem = {
-  @odata.type: "microsoft.graph.externalItem",
+  '@odata.type': 'microsoft.graph.externalItem',
   acl: [
     {
-      type: "user",
-      value: "49103559-feac-4575-8b94-254814dfca72",
-      accessType: "deny",
-      identitySource: "Azure Active Directory"
+      type: 'user',
+      value: '49103559-feac-4575-8b94-254814dfca72',
+      accessType: 'deny',
+      identitySource: 'Azure Active Directory'
     }
   ],
   properties: {
-    title: "Error in the payment gateway",
+    title: 'Error in the payment gateway',
     priority: 1,
-    assignee: "john@contoso.com"
+    assignee: 'john@contoso.com'
   },
   content: {
-    value: "<h1>Error in payment gateway</h1><p>Error details...</p>",
-    type: "html"
+    value: '<h1>Error in payment gateway</h1><p>Error details...</p>',
+    type: 'html'
   }
 };
 
-let res = await client.api('/connections/contosohr/items/TSP228082938')
+await client.api('/connections/contosohr/items/TSP228082938')
 	.version('beta')
 	.put(externalItem);
 

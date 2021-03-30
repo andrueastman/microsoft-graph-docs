@@ -11,14 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const servicePrincipal = {
-  appId:"d7fbfe28-c60e-46d2-8335-841923950d3b",
+  appId: 'd7fbfe28-c60e-46d2-8335-841923950d3b',
   tags: [
-    "WindowsAzureActiveDirectoryIntegratedApp",
-    "WindowsAzureActiveDirectoryOnPremApp"
+    'WindowsAzureActiveDirectoryIntegratedApp',
+    'WindowsAzureActiveDirectoryOnPremApp'
   ]
 };
 
-let res = await client.api('/serviceprincipals')
+await client.api('/serviceprincipals')
 	.version('beta')
 	.post(servicePrincipal);
 

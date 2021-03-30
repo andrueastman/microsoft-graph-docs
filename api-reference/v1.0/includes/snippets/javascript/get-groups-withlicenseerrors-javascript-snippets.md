@@ -10,8 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groups')
-	.filter('hasMembersWithLicenseErrors+eq+true,')
+let groups = await client.api('/groups')
+	.filter('hasMembersWithLicenseErrors eq true')
 	.select('id,displayName')
 	.get();
 

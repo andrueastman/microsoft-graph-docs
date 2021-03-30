@@ -14,27 +14,27 @@ const searchResponse = {
   requests: [
     {
       entityTypes: [
-        "externalItem"
+        'externalItem'
       ],
       contentSources: [
-        "/external/connections/connectionfriendlyname"
+        '/external/connections/connectionfriendlyname'
       ],
       query: {
         query_string: {
-          query: "contoso product"
+          query: 'contoso product'
         }
       },
       from: 0,
       size: 25,
       stored_fields: [
-        "title",
-        "description"
+        'title',
+        'description'
       ]
     }
   ]
 };
 
-let res = await client.api('/search/query')
+await client.api('/search/query')
 	.version('beta')
 	.post(searchResponse);
 

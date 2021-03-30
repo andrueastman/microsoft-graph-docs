@@ -11,15 +11,15 @@ const options = {
 const client = Client.init(options);
 
 const team = {
-  template@odata.bind: "https://graph.microsoft.com/beta/teamsTemplates('standard')",
-  displayName: "My Sample Team",
-  description: "My Sample Team’s Description",
-  owners@odata.bind: [
-    "https://graph.microsoft.com/beta/users('userId')"
+  'template@odata.bind': 'https://graph.microsoft.com/beta/teamsTemplates(\'standard\')',
+  displayName: 'My Sample Team',
+  description: 'My Sample Team’s Description',
+  'owners@odata.bind': [
+    'https://graph.microsoft.com/beta/users(\'userId\')'
   ]
 };
 
-let res = await client.api('/teams')
+await client.api('/teams')
 	.version('beta')
 	.post(team);
 

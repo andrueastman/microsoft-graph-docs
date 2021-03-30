@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 KeyCredential keyCredential = new KeyCredential();
 keyCredential.type = "X509CertAndPassword";
 keyCredential.usage = "Sign";
-keyCredential.key = "MIIDYDCCAki...";
+keyCredential.key = Base64.getDecoder().decode("MIIDYDCCAki...");
 
 PasswordCredential passwordCredential = new PasswordCredential();
 passwordCredential.secretText = "MKTr0w1...";
@@ -17,7 +17,12 @@ passwordCredential.secretText = "MKTr0w1...";
 String proof = "eyJ0eXAiOiJ...";
 
 graphClient.serviceprincipals("{id}")
-	.addKey(keyCredential,passwordCredential,proof)
+	.addKey(ServicePrincipalAddKeyParameterSet
+		.newBuilder()
+		.withKeyCredential(keyCredential)
+		.withPasswordCredential(passwordCredential)
+		.withProof(proof)
+		.build())
 	.buildRequest()
 	.post();
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users?filter=signInActivity/lastSignInDateTime%20le%202019-06-01T00:00:00Z')
+let users = await client.api('/users?filter=signInActivity/lastSignInDateTime%20le%202019-06-01T00:00:00Z')
 	.version('beta')
 	.filter('signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z')
 	.get();

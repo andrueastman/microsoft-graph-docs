@@ -11,7 +11,7 @@ var user = await graphClient.Groups["{id}"].Members
 	.Header("ConsistencyLevel","eventual")
 	.Search("displayName:Pr")
 	.Select("displayName,id")
-	.OrderBy("displayName ")
+	.OrderBy("displayName")
 	.GetAsync();
 
 ```

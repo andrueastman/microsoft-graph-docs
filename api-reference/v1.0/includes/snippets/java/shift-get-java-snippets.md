@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ShiftPreferences shiftPreferences = new ShiftPreferences();
 shiftPreferences.id = "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7";
@@ -14,10 +14,10 @@ ShiftAvailability availability = new ShiftAvailability();
 PatternedRecurrence recurrence = new PatternedRecurrence();
 RecurrencePattern pattern = new RecurrencePattern();
 pattern.type = RecurrencePatternType.WEEKLY;
-LinkedList<String> daysOfWeekList = new LinkedList<String>();
-daysOfWeekList.add("Monday");
-daysOfWeekList.add("Wednesday");
-daysOfWeekList.add("Friday");
+LinkedList<DayOfWeek> daysOfWeekList = new LinkedList<DayOfWeek>();
+daysOfWeekList.add(DayOfWeek.MONDAY);
+daysOfWeekList.add(DayOfWeek.WEDNESDAY);
+daysOfWeekList.add(DayOfWeek.FRIDAY);
 pattern.daysOfWeek = daysOfWeekList;
 pattern.interval = 1;
 recurrence.pattern = pattern;
